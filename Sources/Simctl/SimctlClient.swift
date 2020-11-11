@@ -8,7 +8,6 @@
 import struct Foundation.UUID
 import struct Foundation.Data
 import class Foundation.URLSession
-import SimctlShared
 #if canImport(UIKit)
 import UIKit
 #elseif canImport(AppKit)
@@ -219,7 +218,7 @@ extension SimctlClient {
     }
 }
 extension SimctlClient.Host {
-    public static func localhost(port: SimctlShared.Port) -> SimctlClient.Host { SimctlClient.Host("http://localhost:\(port)") }
+    public static func localhost(port: Port) -> SimctlClient.Host { SimctlClient.Host("http://localhost:\(port)") }
 }
 extension SimctlClient.Host: Equatable { }
 
