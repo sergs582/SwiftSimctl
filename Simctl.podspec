@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.social_media_url = 'https://twitter.com/chrisdailygrind'
   spec.license = { type: 'MIT', file: 'LICENSE' }
   spec.source = { git: 'https://github.com/ctreffs/SwiftSimctl.git', tag: spec.version.to_s }
-  spec.swift_version = '5.2'
+  spec.swift_version = '4.2'
   spec.requires_arc = true
   spec.exclude_files = '.swift-version'
   spec.preserve_paths = 'bin/*'
@@ -25,5 +25,5 @@ Pod::Spec.new do |spec|
   spec.ios.dependency 'SimctlShared', '~> 0.2.0'
   spec.ios.dependency 'Swifter', '~> 1.5'
   spec.ios.framework = 'UIKit'
-  spec.ios.deployment_target = '11.0'
+  spec.ios.deployment_target = '10.0'
 end

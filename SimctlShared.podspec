@@ -14,11 +14,11 @@ Pod::Spec.new do |spec|
   spec.social_media_url = 'https://twitter.com/chrisdailygrind'
   spec.license = { type: 'MIT', file: 'LICENSE' }
   spec.source = { git: 'https://github.com/ctreffs/SwiftSimctl.git', tag: spec.version.to_s }
-  spec.swift_version = '5.2'
+  spec.swift_version = '4.2'
   spec.requires_arc = true
   spec.exclude_files = '.swift-version'
   spec.source_files  = 'Sources/SimctlShared/**/*.swift'
   spec.framework = 'Foundation'
-  spec.ios.deployment_target = '11.0'
+  spec.ios.deployment_target = '10.0'
   spec.osx.deployment_target = '10.12'
 end
